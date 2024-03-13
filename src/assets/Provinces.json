@@ -1,0 +1,126 @@
+[
+  {
+    "ProvinceId": 1,
+    "Title": "آذربایجان شرقی"
+  },
+  {
+    "ProvinceId": 2,
+    "Title": "آذربایجان غربی"
+  },
+  {
+    "ProvinceId": 3,
+    "Title": "اردبیل"
+  },
+  {
+    "ProvinceId": 4,
+    "Title": "اصفهان"
+  },
+  {
+    "ProvinceId": 5,
+    "Title": "البرز"
+  },
+  {
+    "ProvinceId": 6,
+    "Title": " ایلام"
+  },
+  {
+    "ProvinceId": 7,
+    "Title": "بوشهر"
+  },
+  {
+    "ProvinceId": 8,
+    "Title": "تهران"
+  },
+  {
+    "ProvinceId": 9,
+    "Title": "چهارمحال بختیاری"
+  },
+  {
+    "ProvinceId": 10,
+    "Title": "خراسان جنوبی"
+  },
+  {
+    "ProvinceId": 11,
+    "Title": "خراسان رضوی"
+  },
+  {
+    "ProvinceId": 12,
+    "Title": "خراسان شمالی"
+  },
+  {
+    "ProvinceId": 13,
+    "Title": "خوزستان"
+  },
+  {
+    "ProvinceId": 14,
+    "Title": "زنجان"
+  },
+  {
+    "ProvinceId": 15,
+    "Title": "سمنان"
+  },
+  {
+    "ProvinceId": 16,
+    "Title": "سیستان و بلوچستان"
+  },
+  {
+    "ProvinceId": 17,
+    "Title": "فارس"
+  },
+  {
+    "ProvinceId": 18,
+    "Title": "قزوین"
+  },
+  {
+    "ProvinceId": 19,
+    "Title": "قم"
+  },
+  {
+    "ProvinceId": 20,
+    "Title": "کردستان"
+  },
+  {
+    "ProvinceId": 21,
+    "Title": "کرمان"
+  },
+  {
+    "ProvinceId": 22,
+    "Title": "کرمانشاه"
+  },
+  {
+    "ProvinceId": 23,
+    "Title": "کهکیلویه و بویر احمد"
+  },
+  {
+    "ProvinceId": 24,
+    "Title": "گلستان"
+  },
+  {
+    "ProvinceId": 25,
+    "Title": "گیلان"
+  },
+  {
+    "ProvinceId": 26,
+    "Title": "لرستان"
+  },
+  {
+    "ProvinceId": 27,
+    "Title": "مازندران"
+  },
+  {
+    "ProvinceId": 28,
+    "Title": "مرکزی"
+  },
+  {
+    "ProvinceId": 29,
+    "Title": "هرمزگان"
+  },
+  {
+    "ProvinceId": 30,
+    "Title": "همدان"
+  },
+  {
+    "ProvinceId": 31,
+    "Title": "یزد"
+  }
+]
