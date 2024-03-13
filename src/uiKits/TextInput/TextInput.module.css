@@ -1,0 +1,20 @@
+.input {
+    border-radius: 8px;
+
+    [data-error] & {
+        border-color: var(--mantine-color-red-9);
+    }
+}
+
+.error {
+    color: var(--mantine-color-red-9);
+    padding-top: 12px;
+}
+
+.label {
+    padding-bottom: 14px;
+}
+
+.required {
+    color: var(--mantine-color-red-9);
+}
