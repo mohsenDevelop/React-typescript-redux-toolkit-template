@@ -13,6 +13,7 @@ export const Content = () => {
                 pt={90}
             >
                 <Container
+                    size={'sm'}
                     w={'100%'}
                 >
                     <Outlet />

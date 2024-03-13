@@ -3,6 +3,7 @@ import { Flex, Text, Container } from '@uiKits';
 export const Header = () => {
     return (
         <Container
+            size={'xl'}
             w={'100%'}
             style={{
                 zIndex: 1
