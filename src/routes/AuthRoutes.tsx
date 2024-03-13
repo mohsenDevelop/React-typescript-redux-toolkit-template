@@ -4,7 +4,7 @@ import { AUTH_URL } from '@configs';
 import { MainLayout } from '@layouts';
 import { Loadable } from '@components';
 
-const AuthRegister = Loadable(lazy(() => import('@pages/auth/login/Login')));
+const AuthSignUp = Loadable(lazy(() => import('@pages/auth/signUp/SignUp')));
 
 export const AuthRoutes = {
   path: AUTH_URL,
@@ -13,7 +13,7 @@ export const AuthRoutes = {
     {
       path: AUTH_URL,
       index: true,
-      element: <AuthRegister />,
+      element: <AuthSignUp />,
     },
   ],
 };
