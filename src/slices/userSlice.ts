@@ -1,18 +1,22 @@
-import {createSlice, PayloadAction} from '@reduxjs/toolkit';
+import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 
 const initialState: any = {
-  sample: null,
+  user: {
+    name: '',
+    family: '',
+    mobile: '',
+  }
 };
 
 export const userSlice = createSlice({
   name: 'userSlice',
   initialState,
   reducers: {
-    sampleAction: (state, action: PayloadAction<boolean>) => {
-      state.sample = action.payload;
+    setUserProfileAction: (state, action: PayloadAction<{ name: string, family: string, mobile: string }>) => {
+      state.user = action.payload;
       return state;
     },
   },
 });
 
-export const {sampleAction} = userSlice.actions;
+export const { setUserProfileAction } = userSlice.actions;

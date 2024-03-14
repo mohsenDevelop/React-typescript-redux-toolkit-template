@@ -1,18 +1,24 @@
-import { PANEL_PACKAGE_THIRD_PARTY_CAR_URL, PANEL_PACKAGE_THIRD_PARTY_COMPANY_URL, PANEL_PACKAGE_THIRD_PARTY_DISCOUNT_URL, PANEL_PACKAGE_THIRD_PARTY_URL } from '@configs';
+import {
+  PACKAGE_THIRD_PARTY_CAR_URL,
+  PACKAGE_THIRD_PARTY_COMPANY_URL,
+  PACKAGE_THIRD_PARTY_DISCOUNT_URL,
+  PACKAGE_THIRD_PARTY_URL
+} from '@configs';
 
 export const ThirdPartyRoutes = {
-  path: PANEL_PACKAGE_THIRD_PARTY_URL,
+  path: PACKAGE_THIRD_PARTY_URL,
+  element: <div>packages</div>,
   children: [
     {
-      path: PANEL_PACKAGE_THIRD_PARTY_CAR_URL,
+      path: PACKAGE_THIRD_PARTY_CAR_URL,
       element: <div>CARD</div>,
     },
     {
-      path: PANEL_PACKAGE_THIRD_PARTY_COMPANY_URL,
+      path: PACKAGE_THIRD_PARTY_COMPANY_URL,
       element: <div>COMPANY</div>,
     },
     {
-      path: PANEL_PACKAGE_THIRD_PARTY_DISCOUNT_URL,
+      path: PACKAGE_THIRD_PARTY_DISCOUNT_URL,
       element: <div>DISCOUNT</div>,
     },
   ],

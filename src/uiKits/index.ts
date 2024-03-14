@@ -5,3 +5,4 @@ export * from './Text';
 export * from './TextInput';
 export * from './Stack';
 export * from './Image';
+export * from './Input';

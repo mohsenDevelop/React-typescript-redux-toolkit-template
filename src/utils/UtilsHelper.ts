@@ -17,9 +17,9 @@ export class UtilsHelper {
     //  YEKE
     return !!s && s.toString().length > 0
       ? replaces.reduce(
-          (_elm, [from, to]) => _elm.replace(from, to.toString()),
-          s.toString()
-        )
+        (_elm, [from, to]) => _elm.replace(from, to.toString()),
+        s.toString()
+      )
       : '';
   };
 
@@ -56,10 +56,4 @@ export class UtilsHelper {
       .filter((_el, _index) => _index === 0)
       .join('');
 
-  public static roleList = [
-    {id: 1, name: 'ادمین'},
-    {id: 2, name: 'کاربر عادی'},
-    {id: 3, name: 'مالی'},
-    {id: 4, name: 'پشتیبان'},
-  ];
 }

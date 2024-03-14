@@ -1,3 +1,3 @@
-import { ButtonProps as MantineButtonProps } from '@mantine/core';
+import { ButtonProps as MantineButtonProps, PolymorphicComponentProps } from '@mantine/core';
 
-export type ButtonProps = MantineButtonProps
+export type ButtonProps = PolymorphicComponentProps<'button', MantineButtonProps> 

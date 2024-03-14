@@ -1,3 +1,3 @@
-import { TextInputProps as MantineTextInputProps } from '@mantine/core';
+import { TextInputProps as MantineTextInputProps, PolymorphicComponentProps } from '@mantine/core';
 
-export type TextInputProps = MantineTextInputProps;
+export type TextInputProps = PolymorphicComponentProps<'input', MantineTextInputProps>;
