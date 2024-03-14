@@ -1,1 +1,2 @@
-export * from './userTypes';
+export * from './carTypes';
+export * from './companyTypes';

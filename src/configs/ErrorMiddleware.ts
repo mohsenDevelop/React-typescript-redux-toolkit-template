@@ -1,7 +1,7 @@
 import { isRejectedWithValue } from '@reduxjs/toolkit';
 import type { Middleware } from '@reduxjs/toolkit';
 
-import { AUTH_URL } from './urls';
+import { ROOT_URL } from './urls';
 
 export const rtkQueryErrorLogger: Middleware = () => (next) => (action) => {
   if (isRejectedWithValue(action)) {
@@ -12,7 +12,7 @@ export const rtkQueryErrorLogger: Middleware = () => (next) => (action) => {
 
     if (action?.payload === 401) {
       // TODO: Show snackbar
-      window.location.replace(AUTH_URL);
+      window.location.replace(ROOT_URL);
       return;
     }
     if (action?.payload === 'FETCH_ERROR') {

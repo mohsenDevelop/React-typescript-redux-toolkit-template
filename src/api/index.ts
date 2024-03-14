@@ -1,2 +1,3 @@
 export * from './api';
-export * from './uploadFile';
+export * from './cars';
+export * from './company';

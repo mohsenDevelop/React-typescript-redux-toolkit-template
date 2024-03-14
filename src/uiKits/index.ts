@@ -6,3 +6,4 @@ export * from './TextInput';
 export * from './Stack';
 export * from './Image';
 export * from './Input';
+export * from './Select';

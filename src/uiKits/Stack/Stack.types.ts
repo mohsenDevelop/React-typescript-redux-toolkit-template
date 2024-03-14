@@ -1,3 +1,3 @@
-import { StackProps as MantineStackProps } from '@mantine/core';
+import { StackProps as MantineStackProps, PolymorphicComponentProps } from '@mantine/core';
 
-export type StackProps = MantineStackProps
+export type StackProps = PolymorphicComponentProps<'div', MantineStackProps> 

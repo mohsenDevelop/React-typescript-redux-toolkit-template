@@ -6,11 +6,11 @@ import classes from './TextInput.module.css';
 
 export const TextInput: FC<TextInputProps> = (props) => {
     return (
-        <MantineTextInput classNames={{
-            input: classes.input,
-            error: classes.error,
-            required: classes.required,
-            label: classes.label,
-        }} {...props} />
+        <MantineTextInput
+            classNames={{
+                input: classes.input,
+            }}
+            {...props}
+        />
     );
 };
