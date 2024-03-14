@@ -1,10 +1,13 @@
 import React from 'react';
 import { IconChevronRight, IconChevronLeft } from '@tabler/icons-react';
+import { useMediaQuery } from '@mantine/hooks';
 
 import { Select, Flex, Text, Button } from '@uiKits';
 import { useCar } from './Car.hooks';
 
 const Car = () => {
+
+    const matches = useMediaQuery('(max-width: 48em)');
 
     const {
         form,
@@ -36,6 +39,7 @@ const Car = () => {
             </Text>
             <Flex
                 gap={24}
+                direction={matches ? 'column' : 'row'}
             >
                 <Select
                     flex={1}

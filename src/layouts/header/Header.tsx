@@ -1,8 +1,12 @@
+import { useMediaQuery } from '@mantine/hooks';
+
 import { Flex, Text, Container } from '@uiKits';
 import { HeaderProfile } from '@components';
 import { useSelectUserProfile } from '@slices';
 
 export const Header = () => {
+
+    const matches = useMediaQuery('(max-width: 48em)');
 
     const userProfile = useSelectUserProfile();
 
@@ -27,14 +31,16 @@ export const Header = () => {
                     height={24}
                 />
 
-                <Text
-                    size='md'
-                >
-                    سامانه مقایسه و خرید آنلاین بیمه
-                </Text>
+                {
+                    !matches && <Text
+                        size='md'
+                    >
+                        سامانه مقایسه و خرید آنلاین بیمه
+                    </Text>
+                }
 
                 {
-                    userProfile ?
+                    userProfile?.name?.length > 0 ?
                         <HeaderProfile name={userProfile.name} family={userProfile.family} />
                         :
                         <Text

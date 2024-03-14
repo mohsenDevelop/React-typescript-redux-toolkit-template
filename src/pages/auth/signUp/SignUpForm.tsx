@@ -1,11 +1,14 @@
 import { Flex, TextInput, Text, Button } from '@uiKits';
 import { useForm } from '@mantine/form';
+import { useMediaQuery } from '@mantine/hooks';
 
 import { useSignUp } from './SignUp.hooks';
 import { FormValues } from './SignUp.types';
 import { formValidations } from './SignUp.validations';
 
 export const SignUpForm = () => {
+
+    const matches = useMediaQuery('(max-width: 48em)');
 
     const { handleSubmit } = useSignUp();
 
@@ -33,7 +36,8 @@ export const SignUpForm = () => {
                     ثبت نام
                 </Text>
                 <Flex
-                    gap={16}
+                    gap={matches ? 24 : 16}
+                    direction={matches ? 'column' : 'row'}
                 >
                     <TextInput
                         flex={1}

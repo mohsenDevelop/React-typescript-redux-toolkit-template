@@ -1,8 +1,13 @@
+import { useMediaQuery } from '@mantine/hooks';
+
 import { Flex, Image } from '@uiKits';
 import { Header } from '../header';
 import { Content } from '../content';
 
 export const MainLayout = () => {
+
+    const matches = useMediaQuery('(max-width: 48em)');
+
     return (
         <Flex
             pos={'relative'}
@@ -15,9 +20,9 @@ export const MainLayout = () => {
                 src='/car-green.svg'
                 alt='car'
                 pos={'absolute'}
-                bottom={0}
-                left={20}
-                w={500}
+                bottom={'10%'}
+                left={matches ? 0 : 20}
+                w={matches ? 150 : 500}
             />
         </Flex >
     );
