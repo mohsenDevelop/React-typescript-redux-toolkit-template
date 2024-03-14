@@ -2,7 +2,7 @@ import { useNavigate } from 'react-router-dom';
 
 import { useCompanyListQuery } from '@api';
 import { useFormContext } from '../ThirdPartyProvider';
-import { PACKAGE_THIRD_PARTY_DISCOUNT_URL } from '@configs';
+import { PACKAGE_THIRD_PARTY_DISCOUNT_URL, PACKAGE_THIRD_PARTY_URL } from '@configs';
 
 export const useCompany = () => {
 
@@ -19,7 +19,7 @@ export const useCompany = () => {
     };
 
     const handleNextRoute = () => {
-        navigate(PACKAGE_THIRD_PARTY_DISCOUNT_URL);
+        navigate(`${PACKAGE_THIRD_PARTY_URL}/${PACKAGE_THIRD_PARTY_DISCOUNT_URL}`);
     };
 
     return {

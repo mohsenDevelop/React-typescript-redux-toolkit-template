@@ -5,13 +5,16 @@ import {
   PACKAGE_THIRD_PARTY_COMPANY_URL,
   PACKAGE_THIRD_PARTY_DISCOUNT_URL,
   PACKAGE_THIRD_PARTY_URL,
-  ROOT_URL
+  ROOT_URL,
+  PACKAGE_THIRD_PARTY_INQUIRY_URL
 } from '@configs';
 import ThirdParty from '@pages/thirdParty/ThirdParty';
 import { MainLayout } from '@layouts';
 
-const Car = Loadable(lazy(() => import('@pages/thirdParty/Car/Car')));
-const Company = Loadable(lazy(() => import('@pages/thirdParty/Company/Company')));
+const Car = Loadable(lazy(() => import('@pages/thirdParty/car/Car')));
+const Company = Loadable(lazy(() => import('@pages/thirdParty/company/Company')));
+const Discount = Loadable(lazy(() => import('@pages/thirdParty/discount/Discount')));
+const Inquiry = Loadable(lazy(() => import('@pages/thirdParty/inquiry/Inquiry')));
 
 export const ThirdPartyRoutes = {
   path: ROOT_URL,
@@ -31,7 +34,11 @@ export const ThirdPartyRoutes = {
         },
         {
           path: PACKAGE_THIRD_PARTY_DISCOUNT_URL,
-          element: <div>DISCOUNT</div>,
+          element: <Discount />,
+        },
+        {
+          path: PACKAGE_THIRD_PARTY_INQUIRY_URL,
+          element: <Inquiry />,
         },
       ]
     }

@@ -5,6 +5,8 @@ interface FormValues {
     carType: { value: string, label: string } | null;
     carModel: { value: string, label: string } | null;
     company: { value: string, label: string } | null;
+    thirdDiscount: { value: string, label: string } | null;
+    accidentDiscount: { value: string, label: string } | null;
 }
 
 export const [FormProvider, useFormContext, useForm] =
@@ -17,6 +19,8 @@ export const FormContextProvider: FC<PropsWithChildren> = (props) => {
             carType: null,
             carModel: null,
             company: null,
+            thirdDiscount: null,
+            accidentDiscount: null,
         },
     });
 

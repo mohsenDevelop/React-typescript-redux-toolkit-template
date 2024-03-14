@@ -60,6 +60,7 @@ const Company = () => {
                     variant='outline'
                     type='button'
                     rightSection={<IconChevronLeft />}
+                    disabled={!form.values.company}
                     onClick={handleNextRoute}
                 >
                     مرحله بعد

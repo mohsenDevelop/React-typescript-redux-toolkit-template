@@ -73,6 +73,7 @@ const Car = () => {
                     variant='outline'
                     type='button'
                     rightSection={<IconChevronLeft />}
+                    disabled={!form.values.carType || !form.values.carModel}
                     onClick={handleNextRoute}
                 >
                     مرحله بعد
