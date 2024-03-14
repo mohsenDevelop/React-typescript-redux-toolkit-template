@@ -1,6 +1,11 @@
 import { Flex, Text, Container } from '@uiKits';
+import { HeaderProfile } from '@components';
+import { useSelectUserProfile } from '@slices';
 
 export const Header = () => {
+
+    const userProfile = useSelectUserProfile();
+
     return (
         <Container
             size={'xl'}
@@ -28,11 +33,16 @@ export const Header = () => {
                     سامانه مقایسه و خرید آنلاین بیمه
                 </Text>
 
-                <Text
-                    size='md'
-                >
-                    ثبت نام
-                </Text>
+                {
+                    userProfile ?
+                        <HeaderProfile name={userProfile.name} family={userProfile.family} />
+                        :
+                        <Text
+                            size='md'
+                        >
+                            ثبت نام
+                        </Text>
+                }
 
             </Flex>
         </Container>

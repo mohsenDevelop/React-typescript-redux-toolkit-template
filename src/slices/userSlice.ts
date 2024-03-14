@@ -1,6 +1,6 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 
-const initialState: any = {
+const initialState = {
   user: {
     name: '',
     family: '',
