@@ -5,10 +5,10 @@
 - Separate presentation (UI) components from container (logic) components when possible.
 - Follow a consistent component directory structure (e.g., `FooBar/index.ts`):
   1. `index.ts`
-  2. `FooBar.tsx`
-  3. `FooBar.types.ts`
-  4. `FooBar.styled.ts`
-  5. `FooBar.utils.ts`
+  2. `Cars.tsx`
+  3. `Cars.types.ts`
+  4. `Cars.styled.ts`
+  5. `Cars.utils.ts`
 
   ### Submitting Pull Requests
 
