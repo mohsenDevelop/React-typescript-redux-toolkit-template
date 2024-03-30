@@ -1,4 +1,4 @@
-export const BASE_URL = 'https://www.azki.com';
+export const BASE_URL = '';
 
 // Auth
 export const ROOT_URL = '/';
