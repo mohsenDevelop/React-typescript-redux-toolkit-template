@@ -24,8 +24,6 @@ export const FormContextProvider: FC<PropsWithChildren> = (props) => {
         },
     });
 
-    console.log({ values: form.values });
-
     return (
         <FormProvider form={form}>
             <form onSubmit={form.onSubmit(() => { })}>
