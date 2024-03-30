@@ -1,5 +1,5 @@
 {
-  "name": "azki",
+  "name": "react-typescript-template",
   "version": "1.0.0",
   "private": true,
   "type": "module",
@@ -14,8 +14,9 @@
     "format": "prettier --check  --ignore-path .gitignore --write ."
   },
   "keywords": [],
-  "author": "",
+  "author": "Mohsen Kermanifar",
   "license": "ISC",
+  "github": "https://github.com/mohsenDevelop/React-typescript-redux-toolkit-template",
   "devDependencies": {
     "@types/file-saver": "^2.0.5",
     "@types/lodash": "^4.14.196",
